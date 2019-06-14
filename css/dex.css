@@ -1,0 +1,61 @@
+
+header{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	font-size: 120%;
+}
+
+
+header h1{
+	text-align: right;
+	font-size: 2.6em;
+	font-weight: 100;
+	letter-spacing:-.04em;
+}
+
+h1{
+	text-align: right;
+	font-size: 120%
+}
+
+body{
+	padding-top: 0;
+	max-width: 850px;
+	width: 85%;
+	-webkit-transition: background-color .4s linear;
+	-moz-transition: background-color .4s linear;
+	transition: background-color .4s linear;
+}
+
+
+
+b{
+font-weight: 600;	
+}
+	
+
+
+h3{
+	font-weight: 200;
+	letter-spacing:-.04em;
+	font-size: 170%;
+
+	display: table-cell;
+	vertical-align: bottom;
+
+	padding-left: 2%;
+	padding-bottom: 2%;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+
+}
+.box{
+	display: table;
+}
+
+
+
+

@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /articles
+Disallow: /css
+Disallow: /img
+Disallow: /scripts
+Disallow: /files
+Allow: /
+

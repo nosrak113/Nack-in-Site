@@ -1,0 +1,61 @@
+.sect{padding-top:15px;}
+#exp{line-height:101%;width:715px;}
+#exp .sect{padding-bottom:15px;}
+#exp .sp{padding-top:8px;}
+#leftcolumn{float:left;width:260px;}
+#leftcolumn #logo{width:260px;}
+#leftcolumn #skills{padding-top:187px;width:250px;}
+#leftcolumn #skills .pbot{padding-bottom:14px;}
+#research{width:720px;}
+#exp .sect2{padding-top:25px;}
+#exp .sp2{padding-top:12px;}
+#rightcolumn{display:inline-block;float:left;width:764px;}
+#rightcolumn #edu{line-height:110%;padding-bottom:24px;}
+#head{padding-top:35px;width:764px; height:auto; padding-bottom:3px; display: inline-block;}
+#info{display:inline-block;float:left;font-size:16px;line-height:120%;padding-left:20px;}
+#name{float:left;padding-bottom:0;width:440px;}
+#fname{font-size:28pt;font-weight:700;}
+#tag{font-size:16pt;line-height:110%;}
+body{font-family:Century Gothic,arial,sans-serif;font-size:15px;width:1024px;}
+* .iline{display:inline;}
+* .sect{font-size:18pt;font-weight:700;}
+.dent{text-indent:12px;}
+.tint{color:#283654;}
+footer{clear:both;height:50px;}
+footer a {color:black;}
+
+.line{
+  border-bottom: 1px solid #e5e5e5;
+
+}
+
+ .line{
+  border-left:1px solid #e5e5e5;
+}
+
+.accordion {
+  margin-bottom: 18px;
+}
+
+.accordion-group {
+
+}
+
+.accordion-heading {
+  //border-bottom: 0;
+}
+
+.accordion-heading .accordion-toggle {
+  display: block;
+
+}
+
+.accordion-toggle {
+  //cursor: pointer;
+}
+
+.accordion-inner {
+  padding: 9px 15px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
