@@ -8,7 +8,7 @@
 }
 
 #exp .sect {
-    padding-bottom: 15px;
+
 }
 
 #exp .sp {
@@ -17,16 +17,16 @@
 
 #leftcolumn {
     float: left;
-    width: 260px;
+    width: 220px;
 }
 
 #leftcolumn #logo {
-    width: 260px;
+    width: 220px;
 }
 
 #leftcolumn #skills {
     padding-top: 187px;
-    width: 250px;
+    width: 210px;
 }
 
 #leftcolumn #skills .pbot {
@@ -48,7 +48,7 @@
 #rightcolumn {
     display: inline-block;
     float: left;
-    width: 764px;
+    width: 800px;
 }
 
 #rightcolumn #edu {
@@ -57,8 +57,8 @@
 }
 
 #head {
-    padding-top: 35px;
-    width: 764px;
+    padding-top: 25px;
+    width: 800px;
     height: auto;
     padding-bottom: 3px;
     display: inline-block;
@@ -91,7 +91,7 @@
 
 body {
     font-family: Century Gothic, arial, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     width: 1024px;
 }
 
@@ -105,7 +105,7 @@ body {
 }
 
 .dent {
-    text-indent: 12px;
+    text-indent: 20px each-line;
 }
 
 .tint {
