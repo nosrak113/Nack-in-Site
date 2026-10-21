@@ -1,0 +1,8 @@
+{
+  "name": "jsonresume-theme-nack",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.cjs",
+  "description": "JSON Resume theme matching the original nack.in resume",
+  "dependencies": { "handlebars": "4.7.10" }
+}

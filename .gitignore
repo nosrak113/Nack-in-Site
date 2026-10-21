@@ -1,0 +1,4 @@
+node_modules/
+output/
+.taste-skill/
+.DS_Store

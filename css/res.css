@@ -1,81 +1,82 @@
-.sect {
-    padding-top: 15px;
+/* Shared by the local JSON Resume theme and its generated HTML. */
+html {
+    color: #000;
+    background: #fff;
 }
 
-#exp {
+body {
+    margin: 18px 8px 8px;
+    width: 1024px;
+    font-family: "Century Gothic", Arial, sans-serif;
+    font-size: 16px;
+}
+
+h1, h2, p {
+    margin: 0;
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover, a:focus-visible {
+    text-decoration: underline;
+}
+
+#wrapper {
+    display: flow-root;
+    margin-bottom: 18px;
+}
+
+#skills, #patents, #certifications {
+    width: 100%;
     line-height: 101%;
-    width: 715px;
 }
 
-#exp .sect {
-
+.skill + .skill {
+    margin-top: 6px;
 }
 
-#exp .sp {
-    padding-top: 8px;
-}
-
-#leftcolumn {
-    float: left;
-    width: 220px;
-}
-
-#leftcolumn #logo {
-    width: 220px;
-}
-
-#leftcolumn #skills {
-    padding-top: 187px;
-    width: 210px;
-}
-
-#leftcolumn #skills .pbot {
+.pbot {
     padding-bottom: 14px;
 }
 
-#research {
-    width: 720px;
+.sidebar-title, .inline-title {
+    font-weight: 700;
 }
 
-#exp .sect2 {
-    padding-top: 25px;
+.inline-title {
+    display: inline;
 }
 
-#exp .sp2 {
-    padding-top: 12px;
+.publication + .publication {
+    margin-top: 8px;
 }
 
 #rightcolumn {
-    display: inline-block;
-    float: left;
-    width: 800px;
-}
-
-#rightcolumn #edu {
-    line-height: 110%;
-    padding-bottom: 24px;
+    width: 100%;
 }
 
 #head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
     padding-top: 25px;
-    width: 800px;
-    height: auto;
     padding-bottom: 3px;
-    display: inline-block;
-}
-
-#info {
-    display: inline-block;
-    float: left;
-    font-size: 16px;
-    line-height: 120%;
-    padding-left: 20px;
 }
 
 #name {
     float: left;
-    padding-bottom: 0;
-    width: 440px;
+    flex: 1;
 }
 
 #fname {
@@ -87,81 +88,85 @@
 #tag {
     font-size: 16pt;
     line-height: 110%;
+    white-space: nowrap;
 }
 
-body {
-    font-family: Century Gothic, arial, sans-serif;
+#info {
+    display: inline-block;
+    flex-shrink: 0;
+    float: left;
+    padding-left: 20px;
     font-size: 16px;
-    width: 1024px;
+    line-height: 120%;
 }
 
-* .iline {
-    display: inline;
+.address {
+    white-space: pre-line;
 }
 
-* .sect {
+#exp {
+    width: 100%;
+    line-height: 101%;
+}
+
+.sect {
+    padding-top: 15px;
     font-size: 18pt;
     font-weight: 700;
 }
 
+#exp .sp {
+    padding-top: 8px;
+}
+
+#summary-title, #education-title {
+    margin-bottom: 8px;
+}
+
+#skills-title, #publications-title, #certifications-title {
+    padding-bottom: 2px;
+}
+
 .dent {
-    text-indent: 20px each-line;
+    text-indent: 20px;
+}
+
+.job-bullet {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 12px;
+    text-indent: 0;
+}
+
+.job-bullet::before {
+    content: "-";
+    position: absolute;
+    left: 0;
 }
 
 .tint {
     color: #283654;
 }
 
-footer {
-    clear: both;
-    height: 50px;
-}
-
-footer a {
-    color: black;
-}
-
-.line {
-    border-bottom: 1px solid #e5e5e5;
-}
-
-.line {
-    border-left: 1px solid #e5e5e5;
-}
-
-.accordion {
-    margin-bottom: 18px;
-}
-
-.accordion-group {}
-
-.accordion-heading {
-    //border-bottom: 0;
-}
-
-.accordion-heading .accordion-toggle {
-    display: block;
-}
-
-.accordion-toggle {
-    //cursor: pointer;
-}
-
-.accordion-inner {
-    padding: 9px 15px;
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
-}
-
 @media print {
     @page {
-        margin: 0;
-    }
-    body {
+        size: letter;
         margin: 0.5cm;
     }
-    .no-print,
-    .no-print * {
-        display: none !important;
+    html, body {
+        margin: 0;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
     }
+    /* Preserve the existing print scale; longer content continues onto new pages. */
+    body { width: 1024px; zoom: 0.69; }
+    #head { padding-top: 10px; }
+    .sect { padding-top: 10px; }
+    #exp .sp { padding-top: 6px; }
+    .pbot { padding-bottom: 0; }
+    .job-heading { break-after: avoid; }
+    .skill, .publication, #early-career { break-inside: avoid; }
+    .sect, .sidebar-title { break-after: avoid; }
+    p { orphans: 2; widows: 2; }
+    .no-print { display: none !important; }
 }
