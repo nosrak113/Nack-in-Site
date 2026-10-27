@@ -1,0 +1,196 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/jsonresume.org/master/packages/schema/schema.json",
+  "basics": {
+    "name": "Karson M. Miller",
+    "label": "Product Leader - AI, SaaS, and Mobile Platforms",
+    "image": "./img/logo.png",
+    "email": "karson.m.miller@gmail.com",
+    "phone": "516-384-5952",
+    "workAuthorization": "U.S. Citizen",
+    "url": "https://nack.in",
+    "location": {
+      "city": "Washington DC-Baltimore Area",
+      "countryCode": "US"
+    },
+    "summary": "Product leader with more than a decade in Product Management leading SaaS and mobile products at Google, Salesforce, Microsoft, and venture-backed startups. His AI work began at Jobr with a machine learning recommendation engine, continued through natural language understanding and Einstein Bots at Salesforce and leading Google Search Labs, the experimentation launch vehicle for generative AI in Search, and now runs to multi-participant conversational agents as CTO of Conveen; Polly, where he led product for a mortgage capital markets platform. He is a Georgia Tech electrical engineer who still builds: hands-on across Swift, Python, and cloud platforms, with a record of taking zero-to-one products from proof of concept to general availability and scale."
+  },
+  "work": [
+    {
+      "name": "Conveen AI",
+      "position": "CTO",
+      "startDate": "2024-03",
+      "highlights": [
+        "Serve as chief technology and product executive for a conversational AI concierge, setting technical strategy and product architecture while remaining hands-on in Swift, JavaScript, Google Genkit, and Gemini on GCP and Firebase.",
+        "Lead development of multi-participant conversational agents built on agent orchestration, tool use, and shared group context, with agent evaluation and observability built in to raise quality.",
+        "Drive engineering decisions on inference latency, infrastructure reliability, and cost efficiency, shipping through CI/CD with rapid prototyping and continuous user testing.",
+        "Took the product to its public release on the App Store, earning excellent user feedback and several smaller ai grants."
+      ]
+    },
+    {
+      "name": "Google",
+      "position": "Product Architect",
+      "startDate": "2022-04",
+      "location": "Mountain View, CA",
+      "endDate": "2024-03",
+      "highlights": [
+        "Led Google Search Labs, the experimentation program and launch vehicle for generative AI in Search, across Android, iOS, and Chrome desktop, owning incubation, staged rollout, and executive direction for experiments run by product teams across Search, and driving adoption for millions of users.",
+        "Drove roadmap execution for Search Labs experiments including SGE, Code Tips, Add to Sheets, SGE while browsing, Notes, and Talk to a Live Rep, coordinating staged launches across Search product teams.",
+        "Renewed iOS product architecture and user experience for the native Google Search app, using product analytics to grow daily active users, app store ratings, and cross-platform engagement, including a new notifications inbox and the iOS Lock Screen Search widget."
+      ]
+    },
+    {
+      "name": "Polly.io",
+      "position": "Head of Product",
+      "startDate": "2019-04",
+      "location": "San Francisco, CA",
+      "endDate": "2021-10",
+      "highlights": [
+        "Led product management for an end-to-end mortgage capital markets platform spanning rate lock through loan sale and delivery, including a real-time secondary market that had facilitated over $16 billion in mortgage sales, running at nearly $3 billion a month, with participation from 95% of major US banks and buyers.",
+        "Built and scaled an organization of 40+ people spanning product managers, UX designers, engineering managers, and full-stack developers, providing cross-functional team leadership through $57 million in total funding and shipping MVP releases of four products on a single SaaS platform.",
+        "Provided hands-on technical leadership across Python/Django, Angular, and C# services on PostgreSQL, MongoDB, and RabbitMQ; migrated infrastructure from Heroku to AWS and implemented CI/CD, with Metabase for analytics."
+      ]
+    },
+    {
+      "name": "Salesforce",
+      "position": "Director of Product",
+      "startDate": "2016-04",
+      "location": "San Francisco, CA",
+      "endDate": "2019-04",
+      "highlights": [
+        "Led Einstein Bots from proof of concept to multilingual general availability in 3+ languages, establishing Salesforce's conversational AI offering for enterprise customer-service automation.",
+        "Directed six scrum teams delivering scalable natural language understanding chatbot systems powered by deep learning models, reducing customer-service costs for businesses by 30%.",
+        "Served as platform Product Manager for IoT Cloud, partnering on enterprise architecture decisions to migrate the platform from custom AWS infrastructure onto Salesforce's core architecture, supporting ingestion and processing of billions of events daily."
+      ]
+    },
+    {
+      "name": "RealmDb",
+      "position": "Senior Product Manager",
+      "startDate": "2015-12",
+      "location": "San Francisco, CA",
+      "endDate": "2016-04",
+      "summary": "Y Combinator S11 & Exited, bought by MongoDB, Inc.",
+      "highlights": [
+        "Launched Realm React Native, Realm's first JavaScript product and the first third-party mobile database with dedicated React Native support, and took Realm Xamarin (C#/.NET), Java, React Native, and C++ through beta, shipping SDK lines for an open-source database positioned as an alternative to ORMs and SQLite, focused on developer experience and memory, disk, and battery efficiency."
+      ]
+    },
+    {
+      "name": "Jobr",
+      "position": "Senior Product Manager",
+      "startDate": "2015-01",
+      "location": "San Francisco, CA",
+      "endDate": "2015-12",
+      "summary": "Acquired by Monster.com",
+      "highlights": [
+        "Managed product development for two mobile job-discovery apps across Android and iOS, featured on the iOS App Store front page and ranked in the top five business apps.",
+        "Designed and implemented a machine learning recommendation engine for a Go backend to improve relevance and per-user profitability."
+      ]
+    },
+    {
+      "name": "Microsoft",
+      "position": "Program Manager",
+      "startDate": "2012-09",
+      "location": "Redmond, WA",
+      "endDate": "2015-01",
+      "highlights": [
+        "Led cross-functional teams for the original launch of Office on iPad and iPhone, the first-ever release of Word, Excel, and PowerPoint for iOS, reaching more than 12 million downloads in its first week and more than 40 million downloads on iPad, in 29 languages across 136 countries, and drove ongoing Office and OneNote development across iOS and Mac.",
+        "Established a company-wide iOS beta testing program supporting over 100,000 employees and more than 50 apps."
+      ]
+    },
+    {
+      "name": "Cisco",
+      "position": "Systems Engineer",
+      "startDate": "2010-05",
+      "location": "San Jose, CA",
+      "endDate": "2011-08",
+      "highlights": [
+        "Developed wireless LAN controllers and researched intrusion detection system integration in the Wireless Networking Business Unit, collaborating across teams to improve network security and performance."
+      ]
+    },
+    {
+      "name": "Great Neck Park District",
+      "position": "Lighting Director",
+      "location": "New York, NY",
+      "startDate": "2007",
+      "endDate": "2009",
+      "group": "earlyCareer",
+      "highlights": []
+    },
+    {
+      "name": "Self-employed",
+      "position": "Security Auditor & Network Consultant",
+      "location": "New York, NY",
+      "startDate": "2007",
+      "endDate": "2009",
+      "group": "earlyCareer",
+      "selfEmployed": true,
+      "highlights": []
+    },
+    {
+      "name": "Pace University Robotics Laboratory",
+      "position": "Computer Vision Researcher",
+      "location": "New York, NY",
+      "startDate": "2006",
+      "endDate": "2007",
+      "group": "earlyCareer",
+      "highlights": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "Georgia Institute of Technology",
+      "area": "Electrical Engineering",
+      "studyType": "Bachelor of Science"
+    }
+  ],
+  "publications": [
+    {
+      "name": "System and method for a loan trading exchange",
+      "publisher": "Polly.io",
+      "releaseDate": "2022",
+      "reference": "US11734752B2",
+      "type": "patent"
+    },
+    {
+      "name": "Temporary slots for storing chat data",
+      "publisher": "Salesforce",
+      "releaseDate": "2021",
+      "reference": "US11010558B2",
+      "type": "patent"
+    },
+    {
+      "name": "Voice-activated events management system",
+      "publisher": "Salesforce",
+      "releaseDate": "2021",
+      "reference": "US10885079B2",
+      "type": "patent"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Salesforce Trailhead Ranger",
+      "issuer": "Salesforce",
+      "date": "2018-04"
+    }
+  ],
+  "meta": {
+    "theme": "nack",
+    "language": "en",
+    "appTitle": "Karson-CV",
+    "labels": {
+      "skills": "Skills & Expertise",
+      "publications": "Patents",
+      "education": "Education",
+      "work": "Experience",
+      "earlyCareer": "Early Career",
+      "present": "Present",
+      "phone": "Phone:",
+      "email": "Email:",
+      "website": "Website:"
+    },
+    "earlyCareer": {
+      "location": "New York, NY",
+      "startDate": "2005",
+      "endDate": "2009"
+    }
+  }
+}

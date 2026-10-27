@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="{{language}}">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-title" content="{{appTitle}}">
+    <meta name="description" content="{{basics.label}}">
+    <meta name="generator" content="jsonresume-theme-nack">
+    <title>{{basics.name}}</title>
+    <style>{{{css}}}</style>
+</head>
+<body>
+    <!-- Generated from resume.json. Edit the JSON or theme, then run npm run build. -->
+    <main id="wrapper">
+        <div id="rightcolumn">
+            <header id="head">
+                <div id="name">
+                    <h1 id="fname">{{basics.name}}</h1>
+                    <p id="tag">{{basics.label}}</p>
+                </div>
+                <div id="info">
+                    {{#if basics.phone}}<div><b>{{labels.phone}}</b> <a href="tel:{{phoneLink}}">{{basics.phone}}</a></div>{{/if}}
+                    {{#if basics.email}}<div><b>{{labels.email}}</b> <a href="mailto:{{basics.email}}">{{basics.email}}</a></div>{{/if}}
+                    {{#if locationLine}}<div><b>{{labels.location}}</b> {{locationLine}}</div>{{/if}}
+                    {{#if basics.workAuthorization}}<div><b>Work authorization:</b> {{basics.workAuthorization}}</div>{{/if}}
+                </div>
+            </header>
+            <div id="exp">
+                {{#if basics.summary}}
+                <section aria-labelledby="summary-title">
+                    <h2 id="summary-title" class="sect">Professional Summary</h2>
+                    <p>{{basics.summary}}</p>
+                </section>
+                {{/if}}
+                {{#if skills}}
+                <section id="skills" aria-labelledby="skills-title">
+                    <h2 id="skills-title" class="sect">{{labels.skills}}</h2>
+                    {{#each skills}}
+                    <div class="skill">
+                        <b>{{name}}:</b> {{join keywords ", "}}
+                    </div>
+                    {{/each}}
+                </section>
+                {{/if}}
+                {{#if education}}
+                <section aria-labelledby="education-title">
+                    <h2 id="education-title" class="sect">{{labels.education}}</h2>
+                    {{#each education}}
+                    <div>{{studyType}}{{#if area}} in {{area}}{{/if}} | {{institution}}</div>
+                    {{/each}}
+                </section>
+                {{/if}}
+                {{#if work}}
+                <section aria-labelledby="work-title">
+                    <h2 id="work-title" class="sect">{{labels.work}}</h2>
+                    {{#each work}}
+                    <article class="job">
+                        <div class="sp job-heading"><b>{{position}}</b> - <b>{{name}}</b>{{#if dates}} - {{dates}}{{/if}}{{#if location}} - {{location}}{{/if}}</div>
+                        <div class="tint">
+                            {{#if summary}}<p class="dent"><b>{{summary}}</b></p>{{/if}}
+                            {{#each highlights}}<p class="job-bullet">{{this}}</p>{{/each}}
+                        </div>
+                    </article>
+                    {{/each}}
+                </section>
+                {{/if}}
+            </div>
+            {{#if earlyWork}}
+            <section id="early-career" aria-labelledby="early-career-title">
+                <div><h2 id="early-career-title" class="inline-title">{{labels.earlyCareer}}</h2>{{#if earlyCareer.location}} • {{earlyCareer.location}}{{/if}}{{#if earlyCareer.dates}} • {{earlyCareer.dates}}{{/if}}</div>
+                <div class="tint">
+                    {{#each earlyWork}}
+                    <p class="job-bullet">{{position}} - {{name}}{{#if dates}} - {{dates}}{{/if}}</p>
+                    {{/each}}
+                </div>
+            </section>
+            {{/if}}
+                {{#if publications}}
+                <section id="patents" aria-labelledby="publications-title">
+                    <h2 id="publications-title" class="sect">{{labels.publications}}</h2>
+                    <div class="pbot">
+                        {{#each publications}}
+                        <div class="publication">
+                            <div>{{name}}{{#if reference}} - {{reference}}{{/if}}{{#if publisher}} - {{publisher}}{{/if}}{{#if releaseDate}} - {{releaseDate}}{{/if}}</div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </section>
+                {{/if}}
+            {{#if certificates}}
+            <section id="certifications" aria-labelledby="certifications-title">
+                <h2 id="certifications-title" class="sect">{{labels.certificates}}</h2>
+                {{#each certificates}}
+                <div class="certification">
+                    <div><b>{{name}}</b>{{#if issued}} | Issued {{issued}}{{/if}}</div>
+                </div>
+                {{/each}}
+            </section>
+            {{/if}}
+        </div>
+    </main>
+</body>
+</html>
